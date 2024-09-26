@@ -3,7 +3,7 @@
 
 
 - [Ideación](./ideacion/README.md)  
-- [Diseño](./diseno/README.md)
+- [Diseño](./diseño/README.md)
 
 
 
