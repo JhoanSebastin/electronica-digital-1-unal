@@ -2,7 +2,8 @@
 
 # Ideacion 
 
-Para este proycto se tuvo la idea de hacer un sistema de alarma con 3 sensores y 3 actuadores. A continuacion se buscaron los sensores necesarios para la implementacion como los son:
+Para este proycto se tuvo la idea de hacer un sistema de alarma con 3 sensores y 3 actuadores. A continuacion se buscaron los sensores necesarios para la implementacion como los son:  
+
 Sensor de temperatura (DHT11)
 Sensor de Movimiento (Sensor Pir)
 Sensor de Humo (MQ-5)
@@ -24,5 +25,6 @@ Sensor de humo ("1" y "0")
 Sensor de temperatura (SDA, SCL)
 
 Salidas 
+
 
 
