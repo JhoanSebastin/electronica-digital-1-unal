@@ -7,4 +7,5 @@ Salidas
 Led (Digital 0v a 5 V)  
 7 segmentos (12 salidas digitales)  
 Buzzer (3v a 10v)  
-Diagrama de flujo 
+Diagrama de flujo  
+![Diagrama del proyecto](https://github.com/JhoanSebastin/electronica-digital-1-unal/blob/main/Diagrama%20de%20flujo.jpg)
