@@ -3,11 +3,11 @@
 # Ideacion 
 
 Para este proycto se tuvo la idea de hacer un sistema de alarma con 3 sensores y 3 actuadores. A continuacion se buscaron los sensores necesarios para la implementacion como los son:  
-
-Sensor de temperatura (DHT11)
-Sensor de Movimiento (Sensor Pir)
-Sensor de Humo (MQ-5)
+Sensor de temperatura (DHT11)  
+Sensor de Movimiento (Sensor Pir)  
+Sensor de Humo (MQ-5)  
 Estos sensores se van a conectar con la FPGA, por lo que surgieron problemas, uno de ellos es la conexion del sensor DHT11 con la FPGA, ya que el sensor trabaja con una señal I2C que no puedo leer la FPGA, por lo que se opto por usar un ESP32, Los datos que manda el sensor se reciben en el ESP32 con microPyhton, este se encarga de convertirlo a binario para finalmente pasarlos a la FPGA. Con los demas sensores no se tiene que hacer uso de ningun componente mas ya que estos ya trbajan en binario.
+
 
 En los actuadores se usaron los siguientes componentes:
 7 segmentos ( muestra la temperatura )
