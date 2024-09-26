@@ -1,3 +1,4 @@
 A continuacion encontrara los codigos utilizados:  
 - [Codigo 7 segmentos](./7segmentos.v)  
-- [Codigo ESP32](./ESP32.py)  
+- [Codigo ESP32](./ESP32.py)
+- [Codigo entradas](./top.pcf)  
