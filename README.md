@@ -2,6 +2,9 @@
 
 # Ideacion 
 
+
+- [Ideación](./ideacion/README.md)
+
 Para este proycto se tuvo la idea de hacer un sistema de alarma con 3 sensores y 3 actuadores. A continuacion se buscaron los sensores necesarios para la implementacion como los son:  
 Sensor de temperatura (DHT11)  
 Sensor de Movimiento (Sensor Pir)  
