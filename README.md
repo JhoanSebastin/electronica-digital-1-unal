@@ -19,12 +19,12 @@ Cuando el sensor de temperatura funciona este envia los datos a la ESP32, el cua
 
 # Diseño 
 
-Entradas
-Sensor de movimiento ("1" y "0")
-Sensor de humo ("1" y "0")
-Sensor de temperatura (SDA, SCL)
+Entradas  
+Sensor de movimiento ("1" y "0")  
+Sensor de humo ("1" y "0")  
+Sensor de temperatura (SDA, SCL)  
 
-Salidas 
+Salidas
 
 
 
