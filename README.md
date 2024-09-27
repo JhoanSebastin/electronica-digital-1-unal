@@ -53,6 +53,7 @@ A continuacion encontrara los codigos utilizados:
 - [Codigo PWM](./pwm.v)
 - [Codigo entradas PWM](./entradaspwm.pcf)
 - [Codigo Blink](./BLINK.v)
+- [Evidencias](./evidencias/README.md)
 
 
 
