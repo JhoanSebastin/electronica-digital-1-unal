@@ -46,6 +46,14 @@ Buzzer (3v a 10v)
 ![RTLde PWM](https://github.com/JhoanSebastin/electronica-digital-1-unal/blob/main/pwm%20rtl.jpg)
 
 - [Implementación](./implementacion/README.md)
+A continuacion encontrara los codigos utilizados:  
+- [Codigo 7 segmentos](./7segmentos.v)  
+- [Codigo ESP32](./ESP32.py)
+- [Codigo entradas temperatura](./top.pcf)  
+- [Codigo PWM](./pwm.v)
+- [Codigo entradas PWM](./entradaspwm.pcf)
+- [Codigo Blink](./BLINK.v)
+
 
 
 
