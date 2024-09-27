@@ -4,3 +4,4 @@ A continuacion encontrara los codigos utilizados:
 - [Codigo entradas temperatura](./top.pcf)  
 - [Codigo PWM](./pwm.v)
 - [Codigo entradas PWM](./entradaspwm.pcf)
+- [Codigo Blink](./BLINK.v)
