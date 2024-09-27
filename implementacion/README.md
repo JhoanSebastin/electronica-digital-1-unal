@@ -5,3 +5,5 @@ A continuacion encontrara los codigos utilizados:
 - [Codigo PWM](./pwm.v)
 - [Codigo entradas PWM](./entradaspwm.pcf)
 - [Codigo Blink](./BLINK.v)
+- [Codigo Testbench](./test.v)
+
