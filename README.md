@@ -47,14 +47,14 @@ Buzzer (3v a 10v)
 # Diagrama RTL para el PWM 
 ![RTLde PWM](https://github.com/JhoanSebastin/electronica-digital-1-unal/blob/main/pwm%20rtl.jpg)
 
-- [Implementación](./implementacion/README.md)
+- [Implementación](./implementacion/README.md)  
 A continuacion encontrara los codigos utilizados:  
-- [Codigo 7 segmentos](./7segmentos.v)  
-- [Codigo ESP32](./ESP32.py)
-- [Codigo entradas temperatura](./top.pcf)  
-- [Codigo PWM](./pwm.v)
-- [Codigo entradas PWM](./entradaspwm.pcf)
-- [Codigo Blink](./BLINK.v)
+- [Codigo 7 segmentos](./implementacion/7segmentos.v)  
+- [Codigo ESP32](./implementacion/ESP32.py)
+- [Codigo entradas temperatura](./implementacion/top.pcf)  
+- [Codigo PWM](./implementacion/pwm.v)
+- [Codigo entradas PWM](./implementacion/entradaspwm.pcf)
+- [Codigo Blink](./implementacion/BLINK.v)
 
 # Evidencias 
 Acontinuacion encontrara algunos videos del funcionamiento del sistema de alarma:  
