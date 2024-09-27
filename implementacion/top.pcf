@@ -8,13 +8,13 @@ set_io bin_in[5] 101
 set_io bin_in[6] 52
 
 # Salidas para los segmentos (compartidos entre los displays de unidades y decenas)
-set_io seg_out[0] 21
-set_io seg_out[1] 19
-set_io seg_out[2] 22
+set_io seg_out[0] 26
+set_io seg_out[1] 23
+set_io seg_out[2] 25
 set_io seg_out[3] 20
-set_io seg_out[4] 25
-set_io seg_out[5] 23
-set_io seg_out[6] 26
+set_io seg_out[4] 22
+set_io seg_out[5] 19
+set_io seg_out[6] 21
 
 # Señal de selección para el display 
 set_io sel[0] 34
@@ -22,4 +22,4 @@ set_io sel[1] 33
 set_io sel[2] 29
 set_io sel[3] 28
 
-set_io clk 31
+set_io clk 60
