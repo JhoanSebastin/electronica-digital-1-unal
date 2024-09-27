@@ -56,7 +56,8 @@ A continuacion encontrara los codigos utilizados:
 
 # Evidencias 
 
-[Funcionamiento 7 segmentos](https://www.youtube.com/shorts/RXIc9Svriqs)
+[Funcionamiento 7 segmentos](https://www.youtube.com/shorts/RXIc9Svriqs)  
+[Funcionamiento Blink](https://www.youtube.com/shorts/RXIc9Svriqs)
 
 
 
