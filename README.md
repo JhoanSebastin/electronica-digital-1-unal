@@ -56,6 +56,7 @@ A continuacion encontrara los codigos utilizados:
 - [Codigo entradas PWM](./implementacion/entradaspwm.pcf)
 - [Codigo Blink](./implementacion/BLINK.v)
 - [Codigo TestBench](./implementacion/test.v)
+- [Codigo TestBench](./implementacion/MakefileTestbench7seg.v)
 
 # Evidencias 
 Acontinuacion encontrara algunos videos del funcionamiento del sistema de alarma:  
