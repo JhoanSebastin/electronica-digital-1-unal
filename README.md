@@ -3,7 +3,7 @@
 
 
 - [Ideación](./ideacion/README.md)  
-- [Diseño](./diseño/README.md)
+- [Diseño](./diseño/README.md)  
 Entradas  
 Sensor de movimiento ("1" y "0")  
 Sensor de humo ("1" y "0")  
