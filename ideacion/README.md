@@ -1,17 +1,9 @@
-# Ideacion 
+# Ideacion  
 
-Para este proycto se tuvo la idea de hacer un sistema de alarma con 3 sensores y 3 actuadores. A continuacion se buscaron los sensores necesarios para la implementacion como los son:  
-Sensor de temperatura (DHT11)  
-Sensor de Movimiento (Sensor Pir)  
-Sensor de Humo (MQ-5)  
-Estos sensores se van a conectar con la FPGA, por lo que surgieron problemas, uno de ellos es la conexion del sensor DHT11 con la FPGA, ya que el sensor trabaja con una señal I2C que no puedo leer la FPGA, por lo que se opto por usar un ESP32, Los datos que manda el sensor se reciben en el ESP32 con microPyhton, este se encarga de convertirlo a binario para finalmente pasarlos a la FPGA. Con los demas sensores no se tiene que hacer uso de ningun componente mas ya que estos ya trbajan en binario.
+Este proyecto se centra en la integración de tres sensores y tres actuadores a través de una FPGA ICE40, que coordina y procesa los datos de cada sensor para generar respuestas específicas en los actuadores.  
+Sensor de Temperatura: Procesado a través de un ESP32 para convertir los datos analógicos en binarios que la FPGA puede interpretar, para luego mostrarlos en un display de 7 segmentos.  
+Sensor de Movimiento: Directamente conectado a la FPGA, controla un LED que parpadea durante un período de tiempo determinado al detectar movimiento.  
+Sensor de Humo: También conectado directamente a la FPGA, genera una señal de modulación por ancho de pulso (PWM) que activa un parlante en caso de detectar humo.    
+Sensor de Temperatura  
 
-
-En los actuadores se usaron los siguientes componentes:  
-7 segmentos ( muestra la temperatura )  
-Buzzer (Se activa cuada vez que el sensor detecta humo )  
-Led (cunado hay movimineto el led se apaga y se prende )  
-
-El funcionamiento del protyecto  es el siguiente:  
-Cuando el sensor de temperatura funciona este envia los datos a la ESP32, el cual lee los datos (I2C) y con un codigo que se implementa en micropython los convierte a binario, Este codigo si lo puede leer la FPGA, la fpga convierte el codigo para que el 7 segmentos funcione y muestre la temperatura. En el caso de el sensor de movimineto, este solo envia unos y ceros ,por lo que no hay necesidad de la ESP32, se conecta directamente a la FPGA y se diseña un blink para que cuando detecte movimiento el led parpadee. Por ulltmo el sensor de humo funciona muy parecido al de movimiento, solo envia unos y ceros y cundo la fpga los lee, activa el buzzer si  recibe un alto.
 
