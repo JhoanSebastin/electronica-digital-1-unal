@@ -6,4 +6,6 @@ A continuacion encontrara los codigos utilizados:
 - [Codigo entradas PWM](./entradaspwm.pcf)
 - [Codigo Blink](./BLINK.v)
 - [Codigo Testbench](./test.v)
+- [Codigo MakefileTestbenc7segmentos](./MakefileTestbench7seg.v)
+
 
