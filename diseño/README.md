@@ -18,4 +18,4 @@ Buzzer (3v a 10v)
 # Diagrama RTL Blink 
 ![RTLdel Blink](https://github.com/JhoanSebastin/electronica-digital-1-unal/blob/main/blink%20rtl.jpg)  
 # Diagrama RTL para el PWM 
-![RTLde PWM]()
+![RTLde PWM](https://github.com/JhoanSebastin/electronica-digital-1-unal/blob/main/pwm%20rtl.jpg)
