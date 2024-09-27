@@ -14,4 +14,4 @@ Buzzer (3v a 10v)
 # Diagrama para el 7 segmentos  
 ![Diagrama de 7 segmentos](https://github.com/JhoanSebastin/electronica-digital-1-unal/blob/main/Diagrama%207%20.jpg)  
 # Diagrama RTL para el 7 segmentos  
-![RTLde 7 segmentos]()
+![RTLde 7 segmentos](https://github.com/JhoanSebastin/electronica-digital-1-unal/blob/main/Diagrama%207%20rl.jpg)
