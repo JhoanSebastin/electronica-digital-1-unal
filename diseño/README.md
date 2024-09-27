@@ -16,6 +16,6 @@ Buzzer (3v a 10v)
 # Diagrama RTL para el 7 segmentos  
 ![RTLde 7 segmentos](https://github.com/JhoanSebastin/electronica-digital-1-unal/blob/main/Diagrama%207%20rl.jpg)  
 # Diagrama RTL Blink 
-![RTLdel Blink]()  
+![RTLdel Blink](https://github.com/JhoanSebastin/electronica-digital-1-unal/blob/main/blink%20rtl.jpg)  
 # Diagrama RTL para el PWM 
 ![RTLde PWM]()
