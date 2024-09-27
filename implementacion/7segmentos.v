@@ -8,7 +8,7 @@ module top (
 reg [3:0] units;  // Unidades (0-9)
 reg [3:0] tens;   // Decenas (0-9)
 reg [16:0] count; // Contador para el multiplexado
-reg sel_display;  // Señal de selección para alternar entre displays (0=unidades, 1=decenas)
+reg sel_display; //= 1;  // Señal de selección para alternar entre displays (0=unidades, 1=decenas)
 
 
 
@@ -23,47 +23,48 @@ end
 // Multiplexado: alternar entre los displays de unidades y decenas
 always @(posedge clk) begin
     count <= count + 1;
-    if (count == 100_000) begin  // Cambia de display cada 100,000 ciclos (ajustar según el reloj)
+    if (count == 50000) begin  // Cambia de display cada 100,000 ciclos (ajustar según el reloj)
         sel_display <= ~sel_display;  // Alterna entre las unidades y las decenas
         count <= 0;
-    end
+    end else begin
+		count <= count + 1;
+	end
 end
 
 // Mostrar el número correspondiente en el display de 7 segmentos
 always @(*) begin
     if (sel_display == 1) begin
         // Mostrar las unidades
-        sel = 4'b1110;  // Seleccionar el display de unidades (D1 activado)
+        sel = 4'b0001;  // Seleccionar el display de unidades (D1 activado)
         case (units)
-            4'd0: seg_out = 7'b1111110; // 0
-            4'd1: seg_out = 7'b0110000; // 1
-            4'd2: seg_out = 7'b1101101; // 2
-            4'd3: seg_out = 7'b1111001; // 3
-            4'd4: seg_out = 7'b0110011; // 4
-            4'd5: seg_out = 7'b1011011; // 5
-            4'd6: seg_out = 7'b1011111; // 6
-            4'd7: seg_out = 7'b1110000; // 7
-            4'd8: seg_out = 7'b1111111; // 8
-            4'd9: seg_out = 7'b1111011; // 9
-            default: seg_out = 7'b0000000; // Apagado
+            4'd0: seg_out = 7'b0000001; // 0
+            4'd1: seg_out = 7'b1001111; // 1 7'b0110000
+            4'd2: seg_out = 7'b0010010; // 2 7'b1101101
+            4'd3: seg_out = 7'b0000110; // 3 7'b1111001
+            4'd4: seg_out = 7'b1001100; // 4 7'b0110011
+            4'd5: seg_out = 7'b0100100; // 5 7'b1011011
+            4'd6: seg_out = 7'b0100000; // 6 7'b1011111
+            4'd7: seg_out = 7'b0001111; // 7 7'b1110000
+            4'd8: seg_out = 7'b0000000; // 8 7'b1111111
+            4'd9: seg_out = 7'b0000100; // 9 7'b1111011
+            default: seg_out = 7'b11111111; // Apagado eran ceros
         endcase
     end else begin
         // Mostrar las decenas
-        sel = 4'b1101;  // Seleccionar el display de decenas (D2 activado)
+        sel = 4'b0010;  // Seleccionar el display de decenas (D2 activado)
         case (tens)
-            4'd0: seg_out = 7'b1111110; // 0
-            4'd1: seg_out = 7'b0110000; // 1
-            4'd2: seg_out = 7'b1101101; // 2
-            4'd3: seg_out = 7'b1111001; // 3
-            4'd4: seg_out = 7'b0110011; // 4
-            4'd5: seg_out = 7'b1011011; // 5
-            4'd6: seg_out = 7'b1011111; // 6
-            4'd7: seg_out = 7'b1110000; // 7
-            4'd8: seg_out = 7'b1111111; // 8
-            4'd9: seg_out = 7'b1111011; // 9
-            default: seg_out = 7'b0000000; // Apagado
+            4'd0: seg_out = 7'b0000001; // 0
+            4'd1: seg_out = 7'b1001111; // 1 7'b0110000
+            4'd2: seg_out = 7'b0010010; // 2 7'b1101101
+            4'd3: seg_out = 7'b0000110; // 3 7'b1111001
+            4'd4: seg_out = 7'b1001100; // 4 7'b0110011
+            4'd5: seg_out = 7'b0100100; // 5 7'b1011011
+            4'd6: seg_out = 7'b0100000; // 6 7'b1011111
+            4'd7: seg_out = 7'b0001111; // 7 7'b1110000
+            4'd8: seg_out = 7'b0000000; // 8 7'b1111111
+            4'd9: seg_out = 7'b0000100; // 9 7'b1111011
+            default: seg_out = 7'b11111111; // Apagado eran ceros
         endcase
     end
 end
 endmodule
-
