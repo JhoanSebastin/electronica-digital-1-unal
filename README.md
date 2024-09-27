@@ -2,7 +2,8 @@
 
 
 
-- [Ideación](./ideacion/README.md)  
+- [Ideación](./ideacion/README.md)
+
 Este proyecto se centra en la integración de tres sensores y tres actuadores a través de una FPGA ICE40, que coordina y procesa los datos de cada sensor para generar respuestas específicas en los actuadores.  
 Sensor de Temperatura: Procesado a través de un ESP32 para convertir los datos analógicos en binarios que la FPGA puede interpretar, para luego mostrarlos en un display de 7 segmentos.  
 Sensor de Movimiento: Directamente conectado a la FPGA, controla un LED que parpadea durante un período de tiempo determinado al detectar movimiento.  
@@ -56,9 +57,9 @@ A continuacion encontrara los codigos utilizados:
 - [Codigo Blink](./BLINK.v)
 
 # Evidencias 
-
+Acontinuacion encontrara algunos videos del funcionamiento del sistema de alarma:  
 [Funcionamiento 7 segmentos](https://www.youtube.com/shorts/RXIc9Svriqs)  
-[Funcionamiento Blink](https://www.youtube.com/shorts/RXIc9Svriqs)
+[Funcionamiento Blink](https://www.youtube.com/shorts/WwuvhLxpkaU)
 
 
 
